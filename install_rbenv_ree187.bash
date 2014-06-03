@@ -10,7 +10,7 @@ echo 'eval "$(rbenv init -)"' >> $HOME/.profile
 source $HOME/.profile
 
 # if your gcc version > 4.6 must run
-export CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls"
+# export CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls"
 
 CONFIGURE_OPTS="--no-tcmalloc" rbenv install ree-1.8.7-2012.02
 rbenv rehash
@@ -19,4 +19,5 @@ rbenv shell ree-1.8.7-2012.02
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
 ruby -v
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 bundle --version

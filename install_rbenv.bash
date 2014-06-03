@@ -15,4 +15,5 @@ rbenv shell 1.9.3-p545
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
 ruby -v
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 bundle --version
