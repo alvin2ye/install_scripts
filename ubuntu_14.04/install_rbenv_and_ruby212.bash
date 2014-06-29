@@ -10,15 +10,13 @@ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-buil
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 exec $SHELL
 
-export CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls"
-CONFIGURE_OPTS="--no-tcmalloc" rbenv install ree-1.8.7-2012.02
-rbenv global ree-1.8.7-2012.02
-rbenv shell ree-1.8.7-2012.02
+rbenv install 2.1.2
+rbenv global 2.1.2
 
 exec $SHELL
 
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-gem install bundler --no-ri --no-rdoc
+gem install bundler
 rbenv rehash
 
 ruby -v
