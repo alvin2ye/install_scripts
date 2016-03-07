@@ -1,0 +1,10 @@
+deb http://ubuntu.uhost.hk trusty main restricted universe multiverse
+deb http://ubuntu.uhost.hk trusty-security main restricted universe multiverse
+deb http://ubuntu.uhost.hk trusty-updates main restricted universe multiverse
+deb http://ubuntu.uhost.hk trusty-backports main restricted universe multiverse
+deb http://ubuntu.uhost.hk trusty-proposed main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk trusty main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk trusty-security main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk trusty-updates main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk trusty-backports main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk trusty-proposed main restricted universe
